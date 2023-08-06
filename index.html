@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+      
+      html{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color:rgb(0, 9, 37);
+      }
+      p{
+        color: white;
+      }
+      img{
+        max-width: 100%;
+      }
+      h2{
+        text-align: center;
+        color: white;
+      }
+      .svg-size{
+        height: 100px;
+        width: 100px;
+        border-radius: 25px;
+      }
+      #logo-svg{
+        display: grid;
+        grid-template-columns: repeat(6, 105px);
+        width: 725px;
+        gap: 20px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .svg-p{
+        display: grid;
+      }
+      .svg-p p{
+        text-align: center;
+        line-height: 0px;
+      }
+      .center-text{
+        text-align: center;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .center-img{
+        display: block;
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .button{
+        width: 100px;
+        height: 20px;
+        background-color: tomato;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 5px;
+      }
+      a{
+        text-decoration: none;
+      }
+      
+      .grid-two {
+        display: grid;
+        grid-template-columns: repeat(2, auto); 
+        gap: 50px;
+        width: max-content; 
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+      .button a{
+        color: white;
+        font-weight: bold;
+        
+      }
+      nav{
+        display: flex;
+        justify-content: space-between;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right:  auto;
+      }
+      nav a{
+        color: white;
+        font-size: 25px;
+      }
+      #nav{
+        background-color: darkslategrey;
+        margin-top: -10px;
+        margin-right: -5px;
+        margin-left: -5px;
+        padding-top: 10px;
+        height: 50px;
+      }
+      .pfp{
+        margin-left: auto;
+        margin-right: auto;
+        width: 75px;
+      }
+      .flex{
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+      }
+      .flex p{
+        font-size: 20px;
+      }
+      @media(max-width: 800px){
+        #logo-svg{
+        display: grid;
+        grid-template-columns: repeat(3, 105px);
+        width: 355px;
+        gap: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        
+      }
+     
+      }
+    </style>
+    <div id="nav">
+      <nav>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>  
+      </nav>
+    </div>
+    <div>
+      <h2 style="margin-left: -30px;">About</h2>
+      <div class="pfp">
+        <img src="pfp.png" alt="profile-img" id="pfp">
+      </div>
+      <div>
+        <p class="center-text">Welcome to my website! I'm a passionate and innovative software developer, driven by a deep curiosity for cutting-edge technologies and a desire to create impactful solutions. With a strong foundation in computer science and years of experience in the industry, I thrive on transforming complex challenges into elegant, user-friendly applications. Whether it's developing scalable web applications, crafting efficient algorithms, or diving into the world of artificial intelligence, I am committed to delivering robust and reliable software that exceeds expectations. My dedication to continuous learning ensures that I stay at the forefront of the ever-evolving tech landscape, ready to take on exciting new projects and contribute to the digital world's advancement. Join me on this exciting journey, and let's build the future together through the power of code.</p>
+      </div>
+        <div id="logo-svg">
+          <div class="svg-p">
+            <img class="svg-size" src="html.svg">
+            <p>HTML</p>
+          </div>
+          <div class="svg-p">
+            <img class="svg-size" src="css.svg">
+            <p>CSS</p>
+          </div>
+          <div class="svg-p">
+            <img class="svg-size" src="js.svg">
+            <p>JS</p>
+          </div>
+          <div class="svg-p">
+            <img class="svg-size" src="react.svg">
+            <p>REACT</p>
+          </div>
+          <div class="svg-p">
+            <img class="svg-size" src="git.svg">
+            <p>GIT</p>
+          </div>
+          <div class="svg-p">
+            <img class="svg-size" src="bash.svg">
+            <p>BASH</p>
+          </div>
+          <div class="svg-p">
+            <img class="svg-size" src="nodejs.svg">
+            <p>NODEJS</p>
+          </div>
+          <div class="svg-p">
+            <img class="svg-size" src="typescript.svg">
+            <p>TYPESCRIPT</p>
+          </div>
+          <div class="svg-p">
+            <img class="svg-size" src="npm.svg">
+            <p>NPM</p>
+          </div>
+          <div class="svg-p">
+            <img class="svg-size" src="mongodb.svg">
+            <p>MONGODB</p>
+          </div>
+          <div class="svg-p">
+            <img class="svg-size" src="sass.svg">
+            <p>SASS</p>
+          </div>
+          <div class="svg-p">
+            <img class="svg-size" src="webpack.svg">
+            <p>WEBPACK</p>
+          </div>
+        </div>
+    </div>
+    <div id="projects">
+      <h2>Projects</h2>
+      <div>
+        <img src="cv.png" class="center-img">
+        <div>
+          <p class="center-text">Tailwindhelper is an open source tool that helps you with tailwind classes. It can convert units, helps you choose colors, visualize how a font will look and more. Still a work in progress.</p>
+        </div>
+        <div class="grid-two">
+          <div class="button"><a href="#">Repository</a></div>
+          <div class="button"><a href="#">Live app</a></div>
+        </div>
+      </div>
+      <div>
+        <img src="chess.png" class="center-img">
+        <div>
+          <p class="center-text">I can start by designing the board using HTML and CSS, dividing it into 64 squares (8x8 grid) and styling them appropriately. Then, using JavaScript, you can implement the game logic, such as moving the pieces, checking for valid moves, and handling player interactions through event listeners. Lastly, ensure you represent the chess pieces using CSS or images and update the board dynamically based on the game state to provide a fully functional chess-playing experience.</p>
+        </div>
+        <div class="grid-two">
+          <div class="button"><a href="#">Repository</a></div>
+          <div class="button"><a href="#">Live app</a></div>
+        </div>
+      </div>
+      <div>
+        <img src="tailwind.png" class="center-img">
+        <div>
+          <p class="center-text">Tailwindhelper is an open source tool that helps you with tailwind classes. It can convert units, helps you choose colors, visualize how a font will look and more. Still a work in progress.</p>
+        </div>
+        <div class="grid-two">
+          <div class="button"><a href="#">Repository</a></div>
+          <div class="button"><a href="#">Live app</a></div>
+        </div>
+      </div>
+    </div>
+    <div id="contact">
+      <h2>Contact Info</h2>
+      <div class="flex">
+        <p>Email: atmicrosoftdotcom@gmail.com</p>
+        <p>phone: 917 226 4404</p>
+      </div>
+    </div>
+</body>
+</html>                                                                      
